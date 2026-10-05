@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 
-import { Logo } from "./Logo";
+import { LogoBadge } from "./Logo";
 import { InstagramIcon, Sparkle, WhatsAppIcon } from "./Icons";
 import { nav, site } from "@/lib/site";
 import { services } from "@/lib/services";
@@ -17,7 +17,7 @@ export function Footer() {
       <div className="container-x relative">
         <div className="grid gap-12 border-b border-white/10 py-16 md:grid-cols-12 md:py-20">
           <div className="md:col-span-4">
-            <Logo tone="light" />
+            <LogoBadge className="h-32 w-32 ring-1 ring-white/10 rounded-full" />
             <p className="mt-6 max-w-sm text-[0.95rem] leading-relaxed">
               Interior, exterior and signature feature-wall painting across the Greater Toronto Area. {site.tagline}.
             </p>
