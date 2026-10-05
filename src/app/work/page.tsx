@@ -36,7 +36,7 @@ export default function WorkPage() {
         <div className="container-x grid gap-12 lg:grid-cols-12 lg:items-center">
           <Reveal className="lg:col-span-5">
             <p className="eyebrow">Before & after</p>
-            <h2 className="display mt-5 text-[2.6rem] text-navy md:text-6xl">
+            <h2 className="display mt-5 text-[2.1rem] text-navy md:text-[3.25rem]">
               From raw to <em className="text-gold">refined.</em>
             </h2>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-muted">{beforeAfter.caption}</p>
@@ -53,7 +53,7 @@ export default function WorkPage() {
           <span className="grid h-16 w-16 place-items-center rounded-full bg-navy text-paper">
             <InstagramIcon className="h-7 w-7" />
           </span>
-          <h2 className="display mt-8 text-4xl text-navy md:text-6xl">
+          <h2 className="display mt-8 text-[2.1rem] text-navy md:text-[3.25rem]">
             Follow along on <em className="text-gold">Instagram</em>
           </h2>
           <p className="mt-5 max-w-lg text-muted">See our latest projects, works in progress and reels at {site.instagram.handle}.</p>

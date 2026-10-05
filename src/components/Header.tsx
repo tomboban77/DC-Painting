@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { ArrowUpRight, Menu, Phone, X } from "lucide-react";
 
 import { Logo } from "./Logo";
-import { InstagramIcon } from "./Icons";
+import { InstagramIcon, WhatsAppIcon } from "./Icons";
 import { nav, site } from "@/lib/site";
 
 export function Header() {
@@ -42,6 +42,9 @@ export function Header() {
             <a href={site.instagram.href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-paper">
               <InstagramIcon className="h-3.5 w-3.5" /> {site.instagram.handle}
             </a>
+            <a href={site.whatsapp.href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-paper">
+              <WhatsAppIcon className="h-3.5 w-3.5" /> WhatsApp us
+            </a>
             <a href={site.phone.href} className="inline-flex items-center gap-2 font-semibold text-paper hover:text-gold-soft">
               <Phone className="h-3.5 w-3.5" strokeWidth={1.8} /> {site.phone.display}
             </a>
@@ -73,6 +76,28 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
+            <div className="hidden items-center gap-2 md:flex">
+              <a
+                href={site.instagram.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+                title="Instagram"
+                className="grid h-10 w-10 place-items-center rounded-full border border-line text-navy transition-colors hover:border-navy hover:bg-navy hover:text-paper"
+              >
+                <InstagramIcon className="h-[18px] w-[18px]" />
+              </a>
+              <a
+                href={site.whatsapp.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="WhatsApp"
+                title="WhatsApp"
+                className="grid h-10 w-10 place-items-center rounded-full border border-line text-navy transition-colors hover:border-[#25D366] hover:bg-[#25D366] hover:text-white"
+              >
+                <WhatsAppIcon className="h-[18px] w-[18px]" />
+              </a>
+            </div>
             <a href={site.phone.href} className="hidden items-center gap-2 text-sm font-bold text-navy xl:inline-flex">
               <span className="grid h-9 w-9 place-items-center rounded-full border border-line">
                 <Phone className="h-4 w-4" strokeWidth={1.8} />
@@ -128,7 +153,7 @@ export function Header() {
                 >
                   <Link href={item.href} className="flex items-baseline gap-4 border-b border-line py-4">
                     <span className="text-xs font-bold text-gold">0{i + 1}</span>
-                    <span className={`display text-[2.6rem] ${pathname === item.href ? "italic text-gold" : "text-navy"}`}>{item.label}</span>
+                    <span className={`display text-[2.1rem] ${pathname === item.href ? "italic text-gold" : "text-navy"}`}>{item.label}</span>
                   </Link>
                 </motion.div>
               ))}
@@ -139,6 +164,14 @@ export function Header() {
                 <Link href="/contact" className="btn btn-ghost w-full">
                   Request a Free Estimate
                 </Link>
+                <div className="mt-2 grid grid-cols-2 gap-3">
+                  <a href={site.whatsapp.href} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 rounded-full border border-line py-3 text-sm font-semibold text-navy">
+                    <WhatsAppIcon className="h-4 w-4 text-[#25D366]" /> WhatsApp
+                  </a>
+                  <a href={site.instagram.href} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 rounded-full border border-line py-3 text-sm font-semibold text-navy">
+                    <InstagramIcon className="h-4 w-4 text-gold" /> Instagram
+                  </a>
+                </div>
               </div>
             </nav>
           </motion.div>

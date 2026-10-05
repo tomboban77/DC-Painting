@@ -56,7 +56,7 @@ function Hero() {
             <p className="eyebrow">GTA Painting Company · {site.yearsInBusiness}+ Years</p>
           </Reveal>
           <Reveal delay={0.08}>
-            <h1 className="display mt-7 text-[3.6rem] text-navy sm:text-7xl md:text-[6.4rem] xl:text-[7.4rem]">
+            <h1 className="display mt-7 text-[2.7rem] text-navy sm:text-6xl md:text-[5rem] xl:text-[5.75rem]">
               The art of a <em className="relative whitespace-nowrap font-medium text-gold">
                 flawless
                 <svg viewBox="0 0 300 20" className="absolute -bottom-2 left-0 h-3 w-full text-gold-soft md:-bottom-3" preserveAspectRatio="none" aria-hidden="true">
@@ -151,7 +151,7 @@ function Intro() {
         </Reveal>
         <div className="lg:col-span-9">
           <Reveal>
-            <p className="display text-[2rem] leading-[1.15] text-navy sm:text-4xl md:text-[3.2rem]">
+            <p className="display text-[1.6rem] leading-[1.3] text-navy sm:text-3xl md:text-[2.5rem]">
               We obsess over the details most painters skip: <em className="text-gold">the prep, the lines, the clean-up.</em>{" "}
               Because a fine finish isn’t just how a room looks on day one, but how it still looks years later.
             </p>
@@ -161,7 +161,7 @@ function Intro() {
               <Reveal key={s.label} delay={i * 0.08} className="bg-ivory p-6 md:p-8">
                 <dt className="sr-only">{s.label}</dt>
                 <dd>
-                  <span className="display block text-5xl text-navy md:text-6xl">{s.value}</span>
+                  <span className="display block text-4xl text-navy md:text-5xl">{s.value}</span>
                   <span className="mt-3 block text-xs font-semibold uppercase tracking-[0.16em] text-stone">{s.label}</span>
                 </dd>
               </Reveal>
@@ -288,11 +288,11 @@ function Transformation() {
             <dl className="mt-10 grid grid-cols-2 gap-6 border-t border-line pt-8">
               <div>
                 <dt className="text-xs font-bold uppercase tracking-[0.18em] text-stone">Project</dt>
-                <dd className="display mt-2 text-2xl text-navy">Commercial unit</dd>
+                <dd className="display mt-2 text-xl text-navy">Commercial unit</dd>
               </div>
               <div>
                 <dt className="text-xs font-bold uppercase tracking-[0.18em] text-stone">Scope</dt>
-                <dd className="display mt-2 text-2xl text-navy">Ceiling, steel & walls</dd>
+                <dd className="display mt-2 text-xl text-navy">Ceiling, steel & walls</dd>
               </div>
             </dl>
             <Link href="/work" className="link-u mt-10 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.16em] text-navy">
@@ -366,7 +366,7 @@ function Materials() {
               <li key={p.t}>
                 <Reveal delay={i * 0.08}>
                   <span className="display text-lg italic text-gold">0{i + 1}</span>
-                  <h3 className="display mt-2 text-[1.65rem] text-navy">{p.t}</h3>
+                  <h3 className="display mt-2 text-[1.35rem] text-navy">{p.t}</h3>
                   <p className="mt-2 text-[0.95rem] leading-relaxed text-muted">{p.d}</p>
                 </Reveal>
               </li>
@@ -421,7 +421,7 @@ function Areas() {
           {site.serviceAreas.map((city, i) => (
             <li key={city} className="border-b border-line">
               <Reveal delay={(i % 3) * 0.05} className="group flex items-center justify-between py-5 pr-4">
-                <span className="display text-2xl text-navy transition-colors group-hover:text-gold md:text-[1.7rem]">{city}</span>
+                <span className="display text-xl text-navy transition-colors group-hover:text-gold md:text-[1.35rem]">{city}</span>
                 <span className="h-1.5 w-1.5 rounded-full bg-gold/60 transition-transform group-hover:scale-150" />
               </Reveal>
             </li>

@@ -14,6 +14,11 @@ export const site = {
     href: "tel:+14378754406",
     sms: "sms:+14378754406",
   },
+  whatsapp: {
+    // Assumed to be the same number as the phone line — confirm with the client.
+    display: "(437) 875-4406",
+    href: "https://wa.me/14378754406?text=" + encodeURIComponent("Hi DC Fine Painting! I'd like a quote for a painting project."),
+  },
   email: "hello@dcfinepainting.ca", // TODO: replace with the client's real email
   instagram: {
     handle: "@dcfine.painting",

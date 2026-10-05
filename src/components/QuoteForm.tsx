@@ -60,7 +60,7 @@ export function QuoteForm() {
           <span className="grid h-20 w-20 place-items-center rounded-full bg-navy text-gold-soft">
             <Check className="h-9 w-9" strokeWidth={2} />
           </span>
-          <h3 className="display mt-8 text-5xl text-navy">Thank you!</h3>
+          <h3 className="display mt-8 text-4xl text-navy">Thank you!</h3>
           <p className="mt-4 max-w-md text-muted">
             Your request is in. We’ll be in touch within one business day to talk through your project. Need us sooner? Call{" "}
             <a href={site.phone.href} className="font-semibold text-navy underline decoration-gold underline-offset-4">

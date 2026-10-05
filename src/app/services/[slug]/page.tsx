@@ -58,7 +58,7 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
                   No. {String(index + 1).padStart(2, "0")} · {service.name}
                 </span>
               </div>
-              <h1 className="display mt-6 text-[3rem] text-navy sm:text-6xl md:text-[5rem]">{service.headline}</h1>
+              <h1 className="display mt-6 text-[2.5rem] text-navy sm:text-5xl md:text-[4rem]">{service.headline}</h1>
               <p className="mt-7 max-w-xl text-lg leading-relaxed text-muted">{service.summary}</p>
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
                 <Link href={`/contact?service=${service.slug}`} className="btn btn-primary">
@@ -88,7 +88,7 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
           <div className="space-y-6 lg:col-span-8">
             {service.intro.map((p, i) => (
               <Reveal key={i} delay={i * 0.08}>
-                <p className={i === 0 ? "display text-[1.9rem] leading-[1.25] text-navy md:text-[2.4rem]" : "text-lg leading-relaxed text-muted"}>{p}</p>
+                <p className={i === 0 ? "display text-[1.5rem] leading-[1.4] text-navy md:text-[1.9rem]" : "text-lg leading-relaxed text-muted"}>{p}</p>
               </Reveal>
             ))}
           </div>
@@ -100,7 +100,7 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
         <div className="container-x grid gap-14 lg:grid-cols-12">
           <Reveal className="lg:col-span-4">
             <p className="eyebrow">What’s included</p>
-            <h2 className="display mt-5 text-5xl text-navy">
+            <h2 className="display mt-5 text-[2.4rem] text-navy">
               Done right, <em className="text-gold">start to finish.</em>
             </h2>
           </Reveal>
@@ -136,7 +136,7 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
         <div className="grid gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-4">
             <p className="eyebrow">Questions</p>
-            <h2 className="display mt-5 text-5xl text-navy">
+            <h2 className="display mt-5 text-[2.4rem] text-navy">
               Good to <em className="text-gold">know.</em>
             </h2>
             <p className="mt-5 text-muted">
@@ -157,7 +157,7 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
       <section className="border-t border-line bg-sand/50 py-20 md:py-28">
         <div className="container-x">
           <Reveal className="flex items-end justify-between gap-6">
-            <h2 className="display text-4xl text-navy md:text-5xl">
+            <h2 className="display text-3xl text-navy md:text-[2.6rem]">
               Other <em className="text-gold">services</em>
             </h2>
             <Link href="/services" className="link-u hidden text-sm font-bold uppercase tracking-[0.16em] text-navy sm:inline">

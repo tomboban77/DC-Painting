@@ -16,7 +16,7 @@ export function SectionHeading({ eyebrow, title, intro, align = "left", tone = "
   return (
     <Reveal className={`${center ? "mx-auto text-center" : ""} max-w-3xl ${className}`}>
       <p className={`eyebrow ${center ? "justify-center" : ""}`}>{eyebrow}</p>
-      <h2 className={`display mt-5 text-[2.6rem] sm:text-5xl md:text-[4.1rem] ${tone === "dark" ? "text-navy" : "text-paper"}`}>{title}</h2>
+      <h2 className={`display mt-5 text-[2.1rem] sm:text-[2.6rem] md:text-[3.25rem] ${tone === "dark" ? "text-navy" : "text-paper"}`}>{title}</h2>
       {intro && (
         <p className={`mt-6 text-base leading-relaxed md:text-lg ${center ? "mx-auto" : ""} max-w-2xl ${tone === "dark" ? "text-muted" : "text-paper/70"}`}>
           {intro}
@@ -33,7 +33,7 @@ export function PageHero({ eyebrow, title, intro, children }: { eyebrow: string;
       <div className="container-x pb-16 pt-14 md:pb-24 md:pt-24">
         <Reveal>
           <p className="eyebrow">{eyebrow}</p>
-          <h1 className="display mt-6 max-w-5xl text-[3.1rem] text-navy sm:text-6xl md:text-[5.6rem]">{title}</h1>
+          <h1 className="display mt-6 max-w-5xl text-[2.5rem] text-navy sm:text-5xl md:text-[4.25rem]">{title}</h1>
           {intro && <p className="mt-7 max-w-2xl text-lg leading-relaxed text-muted">{intro}</p>}
           {children}
         </Reveal>

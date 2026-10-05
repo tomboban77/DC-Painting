@@ -58,7 +58,7 @@ export default function ServicesPage() {
                       No. {String(i + 1).padStart(2, "0")} · {s.chip.name}
                     </span>
                   </div>
-                  <h2 className="display mt-6 text-[2.6rem] text-navy md:text-6xl">{s.name}</h2>
+                  <h2 className="display mt-6 text-[2.1rem] text-navy md:text-[3.25rem]">{s.name}</h2>
                   <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">{s.summary}</p>
                   <ul className="mt-8 grid gap-3 sm:grid-cols-2">
                     {s.includes.slice(0, 4).map((inc) => (
@@ -80,7 +80,7 @@ export default function ServicesPage() {
       <section className="container-x py-20 md:py-28">
         <Reveal className="mb-12">
           <p className="eyebrow">Every project, every time</p>
-          <h2 className="display mt-5 text-[2.6rem] text-navy md:text-6xl">
+          <h2 className="display mt-5 text-[2.1rem] text-navy md:text-[3.25rem]">
             The DC Fine <em className="text-gold">process.</em>
           </h2>
         </Reveal>

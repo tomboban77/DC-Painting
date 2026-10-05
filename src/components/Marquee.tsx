@@ -6,7 +6,7 @@ export function Marquee({ items, className = "" }: { items: readonly string[]; c
     <ul aria-hidden={hidden} className="flex shrink-0 items-center">
       {items.map((item) => (
         <li key={item} className="flex items-center">
-          <span className="display px-7 text-3xl italic md:px-10 md:text-[2.75rem]">{item}</span>
+          <span className="display px-7 text-2xl italic md:px-10 md:text-[2.1rem]">{item}</span>
           <Sparkle className="h-3 w-3 text-gold" />
         </li>
       ))}

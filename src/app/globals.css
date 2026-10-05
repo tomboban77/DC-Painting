@@ -19,7 +19,7 @@
   --color-gold-bright: #c49a52;
   --color-gold-soft: #dcc596;
 
-  --font-display: var(--font-cormorant), "Times New Roman", serif;
+  --font-display: var(--font-playfair), Georgia, "Times New Roman", serif;
   --font-sans: var(--font-manrope), system-ui, sans-serif;
 
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
@@ -77,29 +77,32 @@
     }
   }
 
-  /* Small uppercase label with a gold rule, used above headings */
+  /* Small uppercase label marked with a gold diamond, used above headings */
   .eyebrow {
     display: inline-flex;
     align-items: center;
-    gap: 0.85rem;
-    font-size: 0.72rem;
+    gap: 0.65rem;
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
     font-weight: 700;
-    letter-spacing: 0.24em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--color-gold);
   }
   .eyebrow::before {
     content: "";
-    width: 2.25rem;
-    height: 1px;
+    width: 0.4rem;
+    height: 0.4rem;
+    flex-shrink: 0;
     background: currentColor;
+    transform: rotate(45deg);
   }
 
   .display {
     font-family: var(--font-display);
     font-weight: 500;
-    letter-spacing: -0.015em;
-    line-height: 0.98;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
   }
 
   /* The arch: the site's signature frame, echoing classic window casings */

@@ -81,7 +81,7 @@ export function Gallery({ projects }: { projects: Project[] }) {
                 <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5 text-paper md:translate-y-3 md:opacity-0 md:transition-all md:duration-500 md:group-hover:translate-y-0 md:group-hover:opacity-100">
                   <div>
                     <p className="text-[0.62rem] font-bold uppercase tracking-[0.2em] text-gold-soft">{p.category}</p>
-                    <p className="display mt-1 text-2xl">{p.title}</p>
+                    <p className="display mt-1 text-xl">{p.title}</p>
                   </div>
                   <Expand className="h-5 w-5 shrink-0" />
                 </div>
@@ -137,7 +137,7 @@ export function Gallery({ projects }: { projects: Project[] }) {
               <p className="text-[0.65rem] font-bold uppercase tracking-[0.2em] text-gold-soft">
                 {current.category} · {current.location}
               </p>
-              <p className="display mt-2 text-3xl">{current.title}</p>
+              <p className="display mt-2 text-2xl">{current.title}</p>
               <p className="mt-2 text-sm text-paper/65">{current.description}</p>
             </div>
           </motion.div>

@@ -6,7 +6,7 @@ import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import diamond from "@/assets/images/work/feature-wall-diamond.jpg";
 import { Reveal } from "@/components/Reveal";
 import { QuoteForm } from "@/components/QuoteForm";
-import { InstagramIcon } from "@/components/Icons";
+import { InstagramIcon, WhatsAppIcon } from "@/components/Icons";
 import { ArchOutline } from "@/components/Section";
 import { site } from "@/lib/site";
 
@@ -24,7 +24,7 @@ export default function ContactPage() {
         <div className="lg:col-span-5">
           <Reveal>
             <p className="eyebrow">Free estimate</p>
-            <h1 className="display mt-6 text-[3.1rem] text-navy sm:text-6xl md:text-[5rem]">
+            <h1 className="display mt-6 text-[2.5rem] text-navy sm:text-5xl md:text-[4rem]">
               Let’s talk about <em className="text-gold">your space.</em>
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-muted">
@@ -39,7 +39,7 @@ export default function ContactPage() {
               </span>
               <span>
                 <span className="block text-xs font-bold uppercase tracking-[0.2em] text-stone">Prefer to talk? Call us</span>
-                <span className="display mt-1 block text-4xl text-navy">{site.phone.display}</span>
+                <span className="display mt-1 block text-3xl text-navy">{site.phone.display}</span>
               </span>
             </a>
             <ul className="mt-8 space-y-5 text-[0.95rem] text-ink/85">
@@ -47,6 +47,12 @@ export default function ContactPage() {
                 <Mail className="mt-0.5 h-5 w-5 shrink-0 text-gold" strokeWidth={1.6} />
                 <a href={`mailto:${site.email}`} className="link-u">
                   {site.email}
+                </a>
+              </li>
+              <li className="flex gap-4">
+                <WhatsAppIcon className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                <a href={site.whatsapp.href} target="_blank" rel="noreferrer" className="link-u">
+                  Message us on WhatsApp
                 </a>
               </li>
               <li className="flex gap-4">

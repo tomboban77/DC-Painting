@@ -29,8 +29,8 @@ export function Process() {
       {steps.map((s, i) => (
         <li key={s.n} className="bg-paper">
           <Reveal delay={i * 0.08} className="group flex h-full flex-col p-7 md:p-9">
-            <span className="display text-6xl italic text-gold/80 transition-colors duration-500 group-hover:text-gold md:text-7xl">{s.n}</span>
-            <h3 className="display mt-10 text-[1.9rem] text-navy">{s.title}</h3>
+            <span className="display text-5xl italic text-gold/80 transition-colors duration-500 group-hover:text-gold md:text-6xl">{s.n}</span>
+            <h3 className="display mt-10 text-[1.5rem] text-navy">{s.title}</h3>
             <p className="mt-3 text-[0.95rem] leading-relaxed text-muted">{s.body}</p>
           </Reveal>
         </li>

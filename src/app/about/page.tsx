@@ -9,7 +9,8 @@ import interior2 from "@/assets/images/stock/interior-2.jpg";
 import { PageHero } from "@/components/Section";
 import { Reveal, Unveil } from "@/components/Reveal";
 import { CTA } from "@/components/CTA";
-import { Sparkle } from "@/components/Icons";
+import { ArrowUpRight } from "lucide-react";
+import { InstagramIcon, Sparkle, WhatsAppIcon } from "@/components/Icons";
 import { site, stats } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -65,7 +66,7 @@ export default function AboutPage() {
           <div className="lg:col-span-5 lg:col-start-8">
             <Reveal>
               <p className="eyebrow">Our story</p>
-              <h2 className="display mt-5 text-[2.6rem] text-navy md:text-6xl">
+              <h2 className="display mt-5 text-[2.1rem] text-navy md:text-[3.25rem]">
                 A painting company that <em className="text-gold">sweats the small stuff.</em>
               </h2>
               <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted">
@@ -90,7 +91,7 @@ export default function AboutPage() {
         <div className="container-x relative">
           <Reveal className="text-center">
             <p className="eyebrow justify-center text-gold-soft">What we stand for</p>
-            <h2 className="display mt-5 text-[2.6rem] md:text-6xl">
+            <h2 className="display mt-5 text-[2.1rem] md:text-[3.25rem]">
               Three words. <em className="text-gold-soft">Every job.</em>
             </h2>
           </Reveal>
@@ -99,7 +100,7 @@ export default function AboutPage() {
               <li key={v.title} className="bg-navy-deep">
                 <Reveal delay={i * 0.1} className="flex h-full flex-col p-8 md:p-12">
                   <Sparkle className="h-5 w-5 text-gold" />
-                  <h3 className="display mt-8 text-4xl italic md:text-5xl">{v.title}</h3>
+                  <h3 className="display mt-8 text-3xl italic md:text-4xl">{v.title}</h3>
                   <p className="mt-4 leading-relaxed text-paper/70">{v.body}</p>
                 </Reveal>
               </li>
@@ -115,12 +116,63 @@ export default function AboutPage() {
             <Reveal key={s.label} delay={i * 0.08} className="bg-ivory p-6 md:p-10">
               <dt className="sr-only">{s.label}</dt>
               <dd>
-                <span className="display block text-5xl text-navy md:text-7xl">{s.value}</span>
+                <span className="display block text-4xl text-navy md:text-6xl">{s.value}</span>
                 <span className="mt-3 block text-xs font-semibold uppercase tracking-[0.16em] text-stone">{s.label}</span>
               </dd>
             </Reveal>
           ))}
         </dl>
+      </section>
+
+      {/* Connect */}
+      <section className="border-t border-line bg-sand/50 py-20 md:py-28">
+        <div className="container-x grid gap-12 lg:grid-cols-12 lg:items-center">
+          <Reveal className="lg:col-span-5">
+            <p className="eyebrow">Connect with us</p>
+            <h2 className="display mt-5 text-[2.1rem] text-navy md:text-[3.25rem]">
+              Say hello, <em className="text-gold">your way.</em>
+            </h2>
+            <p className="mt-6 max-w-md text-lg leading-relaxed text-muted">
+              Send us photos of your space on WhatsApp for a quick estimate, or follow our latest projects on Instagram.
+            </p>
+          </Reveal>
+          <div className="grid gap-4 sm:grid-cols-2 lg:col-span-7">
+            <Reveal>
+              <a
+                href={site.whatsapp.href}
+                target="_blank"
+                rel="noreferrer"
+                className="group flex h-full flex-col bg-paper p-8 ring-1 ring-line transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_60px_-35px_rgba(17,27,49,0.5)]"
+              >
+                <span className="grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-white">
+                  <WhatsAppIcon className="h-7 w-7" />
+                </span>
+                <span className="display mt-8 text-2xl text-navy">WhatsApp</span>
+                <span className="mt-2 text-sm text-muted">Chat with us directly at {site.whatsapp.display}</span>
+                <span className="mt-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-navy">
+                  Start a chat <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                </span>
+              </a>
+            </Reveal>
+            <Reveal delay={0.08}>
+              <a
+                href={site.instagram.href}
+                target="_blank"
+                rel="noreferrer"
+                className="group flex h-full flex-col bg-paper p-8 ring-1 ring-line transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_60px_-35px_rgba(17,27,49,0.5)]"
+              >
+                <span className="grid h-14 w-14 place-items-center rounded-full bg-gradient-to-br from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white">
+                  <InstagramIcon className="h-7 w-7" />
+                </span>
+                <span className="display mt-8 text-2xl text-navy">Instagram</span>
+                <span className="mt-2 text-sm text-muted">See our latest work at {site.instagram.handle}</span>
+                <span className="mt-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-navy">
+                  Follow us <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                </span>
+              </a>
+            </Reveal>
+          </div>
+        </div>
       </section>
 
       <CTA title="We’d love to hear about your space." />

@@ -10,7 +10,7 @@ export function Logo({ tone = "dark", className = "" }: Props) {
     <Link href="/" aria-label="DC Fine Painting — home" className={`group inline-flex items-center gap-3.5 ${className}`}>
       <LogoMark tone={tone} className="h-12 w-10 shrink-0 transition-transform duration-700 ease-out-soft group-hover:-translate-y-0.5" />
       <span className={`flex flex-col leading-none ${ink}`}>
-        <span className="font-display text-[1.55rem] font-semibold uppercase tracking-[0.12em]">DC Fine</span>
+        <span className="font-display text-[1.2rem] font-semibold uppercase tracking-[0.1em]">DC Fine</span>
         <span className="mt-1.5 flex items-center gap-2">
           <span className="h-px w-3 bg-gold" />
           <span className="text-[0.56rem] font-bold uppercase tracking-[0.46em] text-gold">Painting</span>
@@ -38,7 +38,7 @@ export function LogoMark({ tone = "dark", className = "" }: { tone?: Tone; class
         y="40"
         textAnchor="middle"
         fill={letters}
-        style={{ font: "600 17px var(--font-display), Georgia, serif", letterSpacing: "-0.6px" }}
+        style={{ font: "600 15px var(--font-display), Georgia, serif", letterSpacing: "-0.3px" }}
       >
         DC
       </text>

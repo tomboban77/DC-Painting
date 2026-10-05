@@ -34,11 +34,11 @@ export function ServiceCard({ service, index }: { service: Service; index: numbe
           style={{ backgroundColor: service.chip.color }}
         >
           <span>No.</span>
-          <span className="display text-3xl not-italic tracking-normal">{String(index + 1).padStart(2, "0")}</span>
+          <span className="display text-2xl not-italic tracking-normal">{String(index + 1).padStart(2, "0")}</span>
         </div>
         <div className="flex flex-1 flex-col p-5 md:p-6">
           <p className="text-[0.62rem] font-bold uppercase tracking-[0.22em] text-stone">{service.chip.name}</p>
-          <h3 className="display mt-2 text-[1.75rem] leading-tight text-navy">{service.name}</h3>
+          <h3 className="display mt-2 text-[1.4rem] leading-tight text-navy">{service.name}</h3>
           <p className="mt-3 text-sm leading-relaxed text-muted">{service.summary}</p>
         </div>
       </div>

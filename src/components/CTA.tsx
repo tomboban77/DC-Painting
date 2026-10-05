@@ -17,7 +17,7 @@ export function CTA({ title = "Let’s give your walls the finish they deserve."
           <div className="relative grid gap-10 px-6 py-14 sm:px-10 md:grid-cols-12 md:items-end md:px-16 md:py-24">
             <div className="md:col-span-8">
               <p className="eyebrow text-gold-soft">Free, no-obligation estimate</p>
-              <h2 className="display mt-6 text-[2.6rem] text-paper sm:text-5xl md:text-[4.4rem]">{title}</h2>
+              <h2 className="display mt-6 text-[2.1rem] text-paper sm:text-[2.6rem] md:text-[3.5rem]">{title}</h2>
               <p className="mt-6 max-w-xl text-paper/70">
                 Tell us about your project and we’ll get back to you with a clear, detailed quote — usually within one business day.
               </p>

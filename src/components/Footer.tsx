@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 
 import { Logo } from "./Logo";
-import { InstagramIcon, Sparkle } from "./Icons";
+import { InstagramIcon, Sparkle, WhatsAppIcon } from "./Icons";
 import { nav, site } from "@/lib/site";
 import { services } from "@/lib/services";
 
@@ -30,6 +30,15 @@ export function Footer() {
                 className="grid h-11 w-11 place-items-center rounded-full border border-white/15 transition-colors hover:border-gold hover:text-gold-soft"
               >
                 <InstagramIcon className="h-[18px] w-[18px]" />
+              </a>
+              <a
+                href={site.whatsapp.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="WhatsApp"
+                className="grid h-11 w-11 place-items-center rounded-full border border-white/15 transition-colors hover:border-gold hover:text-gold-soft"
+              >
+                <WhatsAppIcon className="h-[18px] w-[18px]" />
               </a>
               <a
                 href={site.phone.href}
@@ -84,7 +93,19 @@ export function Footer() {
                 <li>
                   <a href={site.phone.href} className="group flex items-start gap-3 hover:text-paper">
                     <Phone className="mt-0.5 h-4 w-4 text-gold-soft" strokeWidth={1.6} />
-                    <span className="display text-2xl text-paper">{site.phone.display}</span>
+                    <span className="display text-xl text-paper">{site.phone.display}</span>
+                  </a>
+                </li>
+                <li>
+                  <a href={site.whatsapp.href} target="_blank" rel="noreferrer" className="flex items-start gap-3 hover:text-paper">
+                    <WhatsAppIcon className="mt-0.5 h-4 w-4 text-gold-soft" />
+                    Chat on WhatsApp
+                  </a>
+                </li>
+                <li>
+                  <a href={site.instagram.href} target="_blank" rel="noreferrer" className="flex items-start gap-3 hover:text-paper">
+                    <InstagramIcon className="mt-0.5 h-4 w-4 text-gold-soft" />
+                    {site.instagram.handle}
                   </a>
                 </li>
                 <li>

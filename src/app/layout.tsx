@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { Playfair_Display, Manrope } from "next/font/google";
 import "./globals.css";
 
 import { Header } from "@/components/Header";
@@ -9,10 +9,9 @@ import { BackToTop } from "@/components/BackToTop";
 import { site } from "@/lib/site";
 import { services } from "@/lib/services";
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
   style: ["normal", "italic"],
   display: "swap",
 });
@@ -74,7 +73,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en-CA" data-scroll-behavior="smooth" className={`${cormorant.variable} ${manrope.variable}`}>
+    <html lang="en-CA" data-scroll-behavior="smooth" className={`${playfair.variable} ${manrope.variable}`}>
       <body className="min-h-dvh">
         <a
           href="#main"

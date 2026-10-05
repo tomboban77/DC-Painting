@@ -37,7 +37,7 @@ export function Testimonials() {
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="text-center"
           >
-            <blockquote className="display text-[1.75rem] leading-[1.2] text-navy sm:text-4xl md:text-[2.75rem]">
+            <blockquote className="display text-[1.4rem] leading-[1.4] text-navy sm:text-[1.75rem] md:text-[2.15rem]">
               <span className="text-gold">“</span>
               {t.quote}
               <span className="text-gold">”</span>
