@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#ffffff"/>
+  <g transform="translate(8 3)">
+    <path d="M4 54V24a20 20 0 0 1 40 0v30Z" fill="#1b2a4a"/>
+    <path d="M8.5 54V24.5a15.5 15.5 0 0 1 31 0V54" fill="none" stroke="#c49a52" stroke-width="1.2"/>
+    <path d="M24 10.5c.3 2.4 1.6 3.7 4 4-2.4.3-3.7 1.6-4 4-.3-2.4-1.6-3.7-4-4 2.4-.3 3.7-1.6 4-4Z" fill="#c49a52"/>
+    <text x="24" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="600" fill="#fbf8f2">DC</text>
+    <path d="M1 49.5C11 45.6 27 44.8 47 45.4c.6 0 .9.9.3 1.1C31 49 14 50.3 2.2 52.4c-1.4.3-2.4-2.2-1.2-2.9Z" fill="#c49a52"/>
+  </g>
+</svg>
